@@ -1,55 +1,95 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site settings / Cấu hình trang
+title: 'your awesome title'
+description: 'your web description'
+keywords: 'your web keywords, another keywords'
+url: 'https://safinguyen.github.io/' # your host
 
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# nav / Thanh điều hướng
+# Best experience: 6 tabs, each no more than 4 Chinese characters
+nav:
+  Home: '/'                # 首页
+  Tags: '/tags.html'       # 标签
+  Timeline: '/timeline.html' # 时间线
+  About: '/about.html'     # 关于博主
+  Friends: '/friendLink.html' # 友情链接
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# Author / Tác giả
+author: true
+name: 'your awesome name'
+NickName: 'your awesome nickname'
+webtitle: 'your awesome webtitle'
+bio: 'your awesome bio'
+about: true
+aboutyou: 'your introduction'
+portraits: '/assets/profile.jpeg' # path to your portrait image
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# SNS / Mạng xã hội
+SNS: true
+SNS-icon: # ['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
+  mail: 'mailto:abc@gmail.com'
+  weixin: '' # Đường dẫn ảnh QR WeChat của bạn
+  qq: '' # Đường dẫn QR QQ hoặc link http://wpa.qq.com/msgrd?v=3&uin='yourQQ'&site=qq&menu=yes
+  github: ''
+  Codepen: ''
+  weibo: ''
+  instagram: ''
+  Twitter: ''
+  Dribbble: ''
+  Facebook: ''
+  Google: ''
+  zhihu: ''
+  juejin: ''
+  twitch: ''
+
+# Pagination / Phân trang
+paginate: 2
+paginatepath: ['page:num']
+
+# Footer / Chân trang
+footer:
+  since: 2018
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Code highlighting / Tô sáng cú pháp
+highlighter: rouge
+# Choose pygments theme: autumn, default, emacs, friendly, manni, murphy, pastie, perldoc, tango
+pygmentsTheme: 'default'
+
+# Friends Links / Liên kết bạn bè
+friends:
+  jekyll: 'https://www.jekyll.com.cn/'
+
+# Comments / Bình luận
+# Best experience: choose one between disqus, livere, gitment
+# Disqus
+disqus: false
+disqus_url: '' # https://abc.disqus.com/embed.js
+# Livere
+livere: true
+livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # example code
+# Gitment OAuth Application
+Gitment: false
+Gitment_owner: ''  # GitHub username
+Gitment_repo: ''   # GitHub repo name
+client_id: ''      # OAuth Application client_id
+client_secret: ''  # OAuth Application client_secret
+
+# Share buttons / Chia sẻ bài viết
+# Options: weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
+social-share: true
+social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
+
+# Analytics / Thống kê
+# Baidu Analytics - fill your code in baidu-url
+baidu: true
+baidu-url: ''
+# Google Analytics - fill your tracking ID in google-ID
+google: false
+google-ID: ''
+
+# Post header optional colors (used as page variables in post front matter)
+color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
