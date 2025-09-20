@@ -1,5 +1,5 @@
 # Site settings / Cấu hình trang
-title: 'Safi Nguyen'
+title: 'Safi Nguyễn'
 description: 'Blog cá nhân của Nguyễn Hoàng Long'
 keywords: 'art,gaming,technology'
 url: 'https://SafiNguyen.github.io/' # your host
@@ -48,7 +48,7 @@ paginatepath: ['page:num']
 
 # Footer / Chân trang
 footer:
-  since: 2018
+  since: 2025
 
 # Markdown settings
 markdown: kramdown
