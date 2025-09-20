@@ -1,8 +1,8 @@
-# Site settings / Cấu hình trang
 title: 'your awesome title'
 description: 'your web description'
 keywords: 'your web keywords, another keywords'
 url: 'https://SafiNguyen.github.io/' # your host
+baseurl: ''
 
 # nav / Thanh điều hướng
 # Best experience: 6 tabs, each no more than 4 Chinese characters
