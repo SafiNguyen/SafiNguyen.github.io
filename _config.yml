@@ -1,7 +1,7 @@
 # Site settings / Cấu hình trang
-title: 'your awesome title'
-description: 'your web description'
-keywords: 'your web keywords, another keywords'
+title: 'Safi Nguyen'
+description: 'Blog cá nhân của Nguyễn Hoàng Long'
+keywords: 'art,gaming,technology'
 url: 'https://SafiNguyen.github.io/' # your host
 baseurl: ''
 
@@ -16,12 +16,12 @@ nav:
 
 # Author / Tác giả
 author: true
-name: 'your awesome name'
-NickName: 'your awesome nickname'
-webtitle: 'your awesome webtitle'
+name: 'Nguyễn Hoàng Long'
+NickName: 'Safi'
+webtitle: 'Safi Nguyen'
 bio: 'your awesome bio'
 about: true
-aboutyou: 'your introduction'
+aboutyou: 'Tôi là một người yêu thích công nghệ và trò chơi điện tử.'
 portraits: '/assets/profile.jpeg' # path to your portrait image
 
 # SNS / Mạng xã hội
@@ -30,7 +30,7 @@ SNS-icon: # ['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instag
   mail: 'mailto:abc@gmail.com'
   weixin: '' # Đường dẫn ảnh QR WeChat của bạn
   qq: '' # Đường dẫn QR QQ hoặc link http://wpa.qq.com/msgrd?v=3&uin='yourQQ'&site=qq&menu=yes
-  github: ''
+  github: 'https://github.com/SafiNguyen'
   Codepen: ''
   weibo: ''
   instagram: ''
