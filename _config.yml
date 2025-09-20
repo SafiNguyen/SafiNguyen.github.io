@@ -3,7 +3,6 @@ title: 'your awesome title'
 description: 'your web description'
 keywords: 'your web keywords, another keywords'
 url: 'https://SafiNguyen.github.io/' # your host
-baseurl: ''
 
 # nav / Thanh điều hướng
 # Best experience: 6 tabs, each no more than 4 Chinese characters
@@ -82,11 +81,11 @@ client_secret: ''  # OAuth Application client_secret
 # Share buttons / Chia sẻ bài viết
 # Options: weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
 social-share: true
-social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
+social-share-items: ['linkedin','twitter', 'facebook']
 
 # Analytics / Thống kê
 # Baidu Analytics - fill your code in baidu-url
-baidu: true
+baidu: false
 baidu-url: ''
 # Google Analytics - fill your tracking ID in google-ID
 google: false
