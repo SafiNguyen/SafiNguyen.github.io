@@ -2,7 +2,8 @@
 title: 'your awesome title'
 description: 'your web description'
 keywords: 'your web keywords, another keywords'
-url: 'https://safinguyen.github.io/' # your host
+url: 'https://SafiNguyen.github.io/' # your host
+baseurl: ''
 
 # nav / Thanh điều hướng
 # Best experience: 6 tabs, each no more than 4 Chinese characters
