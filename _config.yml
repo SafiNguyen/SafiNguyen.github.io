@@ -8,10 +8,10 @@ baseurl: ''
 # nav / Thanh điều hướng
 # Best experience: 6 tabs, each no more than 4 Chinese characters
 nav:
-  Home: '/'                # 首页
+  About: '/about.html' 
+  Projects: '/'                # 首页
   Tags: '/tags.html'       # 标签
-  Timeline: '/timeline.html' # 时间线
-  About: '/about.html'     # 关于博主
+  Timeline: '/timeline.html' 
   Friends: '/friendLink.html' # 友情链接
 
 # Author / Tác giả
@@ -22,7 +22,7 @@ webtitle: 'Safi Nguyen'
 bio: 'Hiện học tại đại học Khoa học Tự nhiên, Đại học Quốc gia TP.HCM'
 about: true
 aboutyou: 'Tôi là một người yêu thích công nghệ và trò chơi điện tử.'
-portraits: '/assets/profile.jpeg' # path to your portrait image
+portraits: '/assets/profile.jpeg' 
 
 # SNS / Mạng xã hội
 SNS: true
