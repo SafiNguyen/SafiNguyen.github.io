@@ -1,20 +1,20 @@
-<!-- 博文的布局-Layout -->
+<!-- Blog post layout - Layout -->
 <!DOCTYPE html>
 <html>
 <head>
-<!-- 引入head标签 -->
+<!-- Include head tag -->
 {% include head.html %}
 {% include androidColor.html %}
 </head>
 <body>
 
-<!-- 顶部锚点 -->
+<!-- Top anchor point -->
 <a id="htmlup" name="htmlup"></a>
-<!-- 引入博文顶部选项 -->
+<!-- Include blog post header options -->
 {% include post-header.html %}
-<!-- 引入移动下拉选项 -->
+<!-- Include mobile dropdown options -->
 {% include boot.html %}
-<!-- 引入博文顶部样式 -->
+<!-- Include blog post header styles -->
 {% include post-title.html %}
 <div class="markdown-body fadeInUp animated">
 
@@ -30,22 +30,22 @@
     {% endif %}
   {% endif %}
 
-  <!-- 文章内容 -->
+  <!-- Article content -->
   {{ page.content }}
-  <!-- 引入share模块 -->
+  <!-- Include share module -->
   {% include share.html %}
 </div>
 
-<!-- 底部锚点 -->
+<!-- Bottom anchor point -->
 <a id="htmldown" name="htmldown"></a>
-<!-- 引入评论模块 -->
+<!-- Include comment module -->
 {% include comment.html %}
-<!-- 引入goto模块 -->
+<!-- Include goto module -->
 {% include goto.html %}
-<!-- 引入页面底部模块 -->
+<!-- Include page footer module -->
 {% include footer.html %}
 
-<!-- 引用wow.js的动画效果 -->
+<!-- Reference wow.js animation effects -->
 <script src="/assets/js/wow.js"></script>
 <script>
     var wow = new WOW({
@@ -60,7 +60,7 @@
 <!-- 页面刷新回到顶部 -->
 <script>
     window.onbeforeunload = function(){
-        //刷新后页面自动回到顶部
+        //Page automatically returns to top after refresh
         document.documentElement.scrollTop = 0;  //ie下
         document.body.scrollTop = 0;  //非ie
     }
