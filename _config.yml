@@ -16,12 +16,13 @@ nav:
 
 # Author / Tác giả
 author: true
-name: 'Nguyễn Hoàng Long'
-NickName: 'Safi'
+name: 'Real name: Nguyễn Hoàng Long'
+NickName: 'Nickname: Safi'
 webtitle: 'Safi Nguyen'
-bio: 'Hiện học tại đại học Khoa học Tự nhiên, Đại học Quốc gia TP.HCM'
+bio: 'Information Technology Undergrad @ VNUHCM - HCMUS • "we are our choices"'
 about: true
-aboutyou: 'Tôi là một người yêu thích công nghệ và trò chơi điện tử.'
+aboutyou: 'I am a student at the University of Science and Technology of Southern Vietnam. I am interested in technology and Virtual Reality.Beyond academics, I enjoy reading and traveling.I’m always eager to connect with like-minded individuals, discuss ideas, and collaborate on exciting projects and contests. Feel free to reach out if you’d like to chat or work together!'
+I’m always eager to connect with like-minded individuals, discuss ideas, and collaborate on exciting projects and contests. Feel free to reach out if you’d like to chat or work together!'
 portraits: '/assets/profile.jpeg' 
 
 # SNS / Mạng xã hội
