@@ -39,3 +39,34 @@ function showRight() {
 function goneRight() {
   rightTab.setAttribute("class","rotateOutDownRight self-animated");
 }
+
+// Dark Mode Functions
+function toggleDarkMode() {
+  const html = document.documentElement;
+  const currentTheme = html.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  
+  html.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  
+  // Update icon
+  const icon = document.getElementById('darkModeIcon');
+  icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+}
+
+// Initialize theme on page load
+function initializeTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  
+  document.documentElement.setAttribute('data-theme', theme);
+  
+  const icon = document.getElementById('darkModeIcon');
+  if (icon) {
+    icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
+}
+
+// Initialize theme when DOM is loaded
+document.addEventListener('DOMContentLoaded', initializeTheme);
