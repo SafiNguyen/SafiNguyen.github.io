@@ -52,6 +52,17 @@ function toggleDarkMode() {
   // Update icon
   const icon = document.getElementById('darkModeIcon');
   icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+
+  // Update Facebook comments color scheme if present
+  try {
+    var fbComments = document.getElementById('fb-comments');
+    if (fbComments) {
+      fbComments.setAttribute('data-colorscheme', newTheme === 'dark' ? 'dark' : 'light');
+      if (typeof FB !== 'undefined' && FB.XFBML && FB.XFBML.parse) {
+        FB.XFBML.parse();
+      }
+    }
+  } catch (e) {}
 }
 
 // Initialize theme on page load
@@ -66,6 +77,14 @@ function initializeTheme() {
   if (icon) {
     icon.textContent = theme === 'dark' ? '☀️' : '🌙';
   }
+
+  // Initialize Facebook comments color scheme
+  try {
+    var fbComments = document.getElementById('fb-comments');
+    if (fbComments) {
+      fbComments.setAttribute('data-colorscheme', theme === 'dark' ? 'dark' : 'light');
+    }
+  } catch (e) {}
 }
 
 // Initialize theme when DOM is loaded

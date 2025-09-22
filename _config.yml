@@ -22,7 +22,7 @@ webtitle: 'Safi Nguyen'
 bio: 'Information Technology Undergrad @ <a href="https://www.hcmus.edu.vn/" target="_blank">VNUHCM - HCMUS</a> • "we are our choices"'
 about: true
 aboutyou: 'I am a student at <a href="https://www.hcmus.edu.vn/" target="_blank">University of Science–VNUHCM</a>. I am interested in Game Development, Graphics Engineering, and Virtual Reality. At the same time, I’m still on the journey of exploring myself and shaping my own path in both learning and work. I’m eager to study and experience different aspects of coding and technology as a way to grow, improve, and eventually discover where my true passion lies. <br>Beyond academics, I enjoy reading, gaming and traveling. I am always eager to connect with like-minded individuals, discuss ideas, and collaborate on exciting projects and contests. Feel free to reach out if you would like to chat or work together!'
-portraits: '/assets/profile.jpeg' 
+portraits: '/assets/profile.png' 
 
 # SNS / Mạng xã hội
 SNS: true
@@ -50,19 +50,30 @@ kramdown:
 highlighter: rouge
 # Choose pygments theme: autumn, default, emacs, friendly, manni, murphy, pastie, perldoc, tango
 pygmentsTheme: 'default'
-
+# Seán. https://www.seanhalpin.xyz/
 # Friends Links / Liên kết bạn bè
 friends:
   jekyll: 'https://www.jekyll.com.cn/'
 
 # Comments / Bình luận
-# Best experience: choose one between disqus, livere, gitment
+# Hãy chọn một hệ thống bình luận: facebook_comments, disqus, livere, gitment (ưu tiên theo thứ tự này)
+
+# Facebook Comments
+facebook_comments: true
+facebook_app_id: ''
+facebook_locale: 'vi_VN'
+facebook_width: ''          # '' = auto 100% responsive
+facebook_num_posts: 10
+facebook_order_by: 'social' # time | reverse_time | social
+
 # Disqus
 disqus: false
 disqus_url: '' # https://abc.disqus.com/embed.js
+
 # Livere
-livere: true
+livere: false
 livere_uid: 'MTAyMC8zNDI2OS8xMDgwNg==' # example code
+
 # Gitment OAuth Application
 Gitment: false
 Gitment_owner: ''  # GitHub username

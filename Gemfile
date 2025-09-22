@@ -20,4 +20,4 @@ gem "rouge", "~> 4.0"
 
 # Windows compatibility (nếu build trên Windows)
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "wdm", "~> 0.1.1", platforms: [:mingw, :x64_mingw, :mswin]
+#gem "wdm", "~> 0.1.1", platforms: [:mingw, :x64_mingw, :mswin]

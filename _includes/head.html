@@ -16,6 +16,19 @@
 <link rel="stylesheet" href="/assets/css/font.css">
 <!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Pacifico|Ubuntu|Roboto+Mono|Source+Sans+Pro" rel="stylesheet"> -->
 
+<script>
+  (function() {
+    try {
+      var savedTheme = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {
+      // no-op
+    }
+  })();
+</script>
+
 <!-- Favicon -->
 <link href="/assets/profile.jpeg" rel="shortcut icon" />
 <link href="/assets/profile.jpeg" rel="apple-touch-icon-precomposed" />
