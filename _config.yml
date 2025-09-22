@@ -9,40 +9,29 @@ baseurl: ''
 # Best experience: 6 tabs, each no more than 4 Chinese characters
 nav:
   About: '/about.html' 
-  Projects: '/'                # 首页
+  Posts: '/'                # 首页
   Tags: '/tags.html'       # 标签
   Timeline: '/timeline.html' 
-  Friends: '/friendLink.html' # 友情链接
+ # Friends: '/friendLink.html' 
 
 # Author / Tác giả
 author: true
 name: 'Real name: Nguyễn Hoàng Long'
 NickName: 'Nickname: Safi'
 webtitle: 'Safi Nguyen'
-bio: 'Information Technology Undergrad @ VNUHCM - HCMUS • "we are our choices"'
+bio: 'Information Technology Undergrad @ <a href="https://www.hcmus.edu.vn/" target="_blank">VNUHCM - HCMUS</a> • "we are our choices"'
 about: true
-aboutyou: 'I am a student at the University of Science and Technology of Southern Vietnam. I am interested in technology and Virtual Reality. 
-
-Beyond academics, I enjoy reading and traveling. I am always eager to connect with like-minded individuals, discuss ideas, and collaborate on exciting projects and contests. Feel free to reach out if you would like to chat or work together!'
+aboutyou: 'I am a student at <a href="https://www.hcmus.edu.vn/" target="_blank">University of Science–VNUHCM</a>. I am interested in Game Development, Graphics Engineering, and Virtual Reality. At the same time, I’m still on the journey of exploring myself and shaping my own path in both learning and work. I’m eager to study and experience different aspects of coding and technology as a way to grow, improve, and eventually discover where my true passion lies. <br>Beyond academics, I enjoy reading, gaming and traveling. I am always eager to connect with like-minded individuals, discuss ideas, and collaborate on exciting projects and contests. Feel free to reach out if you would like to chat or work together!'
 portraits: '/assets/profile.jpeg' 
 
 # SNS / Mạng xã hội
 SNS: true
 SNS-icon: # ['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
-  weixin: '' # Đường dẫn ảnh QR WeChat của bạn
-  qq: '' # Đường dẫn QR QQ hoặc link http://wpa.qq.com/msgrd?v=3&uin='yourQQ'&site=qq&menu=yes
+  mail: 'mailto:2512741165@student.hcmus.edu.vn'
   github: 'https://github.com/SafiNguyen'
-  Codepen: ''
-  weibo: ''
   instagram: ''
   Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
-  zhihu: ''
-  juejin: ''
-  twitch: ''
+  Facebook: 'https://www.facebook.com/nguyen.hoang.long.166741'
 
 # Pagination / Phân trang
 paginate: 2

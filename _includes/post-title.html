@@ -38,14 +38,14 @@
   <!-- 页面宽度小于800px -->
   <div class="post-changearea">
     {% if page.next.url %}
-      <a href="{{ page.next.url }}" class="leftchange" style="border-right: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span>上一篇<br><br>{{ page.next.title }}</span></a>
+      <a href="{{ page.next.url }}" class="leftchange" style="border-right: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span>Previous<br><br>{{ page.next.title }}</span></a>
     {% else %}
-      <a href="javascript:;" class="leftchange" style="border-right: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span><br>没有上一篇咯</span></a>
+      <a href="javascript:;" class="leftchange" style="border-right: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span><br>No previous post</span></a>
     {% endif %}
     {% if page.previous.url %}
-      <a href="{{ page.previous.url }}" class="rightchange" style="border-left: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span>下一篇<br><br>{{ page.previous.title }}</span></a>
+      <a href="{{ page.previous.url }}" class="rightchange" style="border-left: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span>Next<br><br>{{ page.previous.title }}</span></a>
     {% else %}
-      <a href="javascript:;" class="rightchange" style="border-left: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span><br>没有下一篇咯</span></a>
+      <a href="javascript:;" class="rightchange" style="border-left: 1px solid #9A85FF;border-bottom: 2px solid #9A85FF;"><span><br>No more post</span></a>
     {% endif %}
   </div>
 </div>
