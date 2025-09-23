@@ -2,7 +2,7 @@
 layout: post
 title: "Tham gia sự kiện Beyond The Code và quá trình hoàn thiện web cá nhân đầu tiên bằng Jekyll"
 date: 2025-09-23
-tags: [jekyll, event, BTC]
+tags: [jekyll, event, BeyondTheCode]
 color: rgb(154,133,255)
 cover: '/assets/BTC20251.jpg'
 ---
