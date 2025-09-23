@@ -42,6 +42,11 @@ a{
   /*display: block;*/
   /*font-family: 'Kaushan Script', cursive;*/
   font-family: Pacifico;
+  transition: color .2s ease, transform .2s ease;
+}
+.logo a:hover{
+  color: #1a73e8;
+  transform: translateY(-1px);
 }
 .top-nav{
     height: 100%;
@@ -63,6 +68,20 @@ a{
 }
 .top-nav li a:hover{
   color: green;
+}
+.top-nav li a.active{
+  color: #1a73e8;
+  font-weight: 600;
+  position: relative;
+}
+.top-nav li a.active::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #1a73e8;
 }
 #top-boot{
   display: none;
@@ -1147,6 +1166,12 @@ html[data-theme="dark"] {
 
 [data-theme="dark"] .top-nav li a:hover {
   color: #4CAF50;
+}
+[data-theme="dark"] .top-nav li a.active{
+  color: #8ab4f8;
+}
+[data-theme="dark"] .top-nav li a.active::after{
+  background: #8ab4f8;
 }
 
 [data-theme="dark"] .top {

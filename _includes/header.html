@@ -1,12 +1,19 @@
 <header id="index-header">
   <div class="top-center">
       <div class="logo">
-          <a href="{{ "/" | relative_url }}" title="my awesome webtitle">{{ site.webtitle }}</a>
+          <a href="{{ "/about/" | relative_url }}" aria-label="Go to about" title="About - {{ site.webtitle }}">{{ site.webtitle }}</a>
       </div>
       <nav class="top-nav">
           <ul>
               {% for i in site.nav %}
-                <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
+                {% assign href = i[1] %}
+                {% assign href_dir = href | replace: '.html','/' %}
+                {% assign current = page.url %}
+                {% if current == href or current == href_dir %}
+                  <li><a class="active" href="{{ href }}">{{ i[0] }}</a></li>
+                {% else %}
+                  <li><a href="{{ href }}">{{ i[0] }}</a></li>
+                {% endif %}
               {% endfor %}
           </ul>
       </nav>
