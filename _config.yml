@@ -22,7 +22,7 @@ webtitle: 'Safi Nguyen'
 bio: 'Information Technology Undergrad @ <a href="https://www.hcmus.edu.vn/" target="_blank">VNUHCM - HCMUS</a> • "we are our choices"'
 about: true
 aboutyou: 'I am a student at <a href="https://www.hcmus.edu.vn/" target="_blank">University of Science–VNUHCM</a>. I am interested in Game Development, Graphics Engineering, and Virtual Reality. At the same time, I’m still on the journey of exploring myself and shaping my own path in both learning and work. I’m eager to study and experience different aspects of coding and technology as a way to grow, improve, and eventually discover where my true passion lies. <br>Beyond academics, I enjoy reading, gaming and traveling. I am always eager to connect with like-minded individuals, discuss ideas, and collaborate on exciting projects and contests. Feel free to reach out if you would like to chat or work together!'
-portraits: '/assets/profile.png' 
+portraits: '/assets/profile.jpeg' 
 
 # SNS / Mạng xã hội
 SNS: true
