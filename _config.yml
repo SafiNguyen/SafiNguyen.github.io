@@ -59,7 +59,7 @@ friends:
 # Hãy chọn một hệ thống bình luận: facebook_comments, disqus, livere, gitment (ưu tiên theo thứ tự này)
 
 # Facebook Comments
-facebook_comments: true
+facebook_comments: false
 facebook_app_id: ''
 facebook_locale: 'vi_VN'
 facebook_width: ''          # '' = auto 100% responsive
@@ -67,8 +67,11 @@ facebook_num_posts: 10
 facebook_order_by: 'social' # time | reverse_time | social
 
 # Disqus
-disqus: false
-disqus_url: '' # https://abc.disqus.com/embed.js
+disqus: true
+# Preferred: set your shortname; we will build the embed URL from it
+disqus_shortname: 'safinguyen'
+# Optional: direct embed URL override (leave empty if using shortname)
+disqus_url: '' # e.g. https://example.disqus.com/embed.js
 
 # Livere
 livere: false

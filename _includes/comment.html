@@ -50,11 +50,20 @@
   <script>
     (function() {
       var d = document, s = d.createElement('script');
+      {% if site.disqus_url and site.disqus_url != '' %}
       s.src = '{{ site.disqus_url }}';
+      {% elsif site.disqus_shortname %}
+      s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+      {% else %}
+      s.src = '';
+      {% endif %}
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
   </script>
+  <noscript>Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+  </noscript>
 {%- elsif site.livere -%}
   <section class="post-footer-item comment">
     <div id="lv-container" data-id="city" data-uid="{{ site.livere_uid }}"></div>
