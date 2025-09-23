@@ -42,7 +42,7 @@ git push origin main
 
 Website giờ đã có đầy đủ thông tin như bio, tên, trường và ngành học tại HCMUS. Và đặc biệt, mọi người có thể truy cập tại: https://safinguyen.github.io/ .
 
-![2](E:\web\SafiNguyen.github.io\assets\picture\2bytc20251.png)
+![2](/assets/picture/2bytc20251.png)
 
 ### 22/9/2025 - 23/9/2025: Viết blog đầu tiên – khởi đầu hành trình chia sẻ
 
