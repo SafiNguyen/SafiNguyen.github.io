@@ -17,6 +17,11 @@
       </div>
   </div>
 
+  <!-- Dark Mode Toggle Button on post pages -->
+  <button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()" title="Bật/tắt chế độ tối">
+    <span id="darkModeIcon">🌙</span>
+  </button>
+
 </header>
 {% else %}
 <header id="post-header" style="background-color:{{ page.color }};">
@@ -36,6 +41,11 @@
         <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot_white.png" alt=""></a>
       </div>
   </div>
+
+  <!-- Dark Mode Toggle Button on post pages -->
+  <button class="dark-mode-toggle" id="darkModeToggle" onclick="toggleDarkMode()" title="Bật/tắt chế độ tối">
+    <span id="darkModeIcon">🌙</span>
+  </button>
 
 </header>
 {% endif %}

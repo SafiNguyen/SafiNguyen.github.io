@@ -1128,8 +1128,11 @@ a{
 }
 
 html[data-theme="dark"] {
-  background-color: var(--bg-color);
-  background-image: none;
+  /* Use pure black to avoid any residual gray tint */
+  background-color: #000;
+  background-image: url(/assets/bak.svg);
+  background-position: center;
+  /* background-size: 100%; */
 }
 
 [data-theme="dark"] #index-header {
@@ -1147,7 +1150,20 @@ html[data-theme="dark"] {
 }
 
 [data-theme="dark"] .top {
-  background-color: var(--card-bg);
+  background-color: transparent;
+  background-image: url(/assets/lineart.png);
+  background-size: 1188px 219px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* Keep decorative line art visible on post headers in dark mode */
+[data-theme="dark"] .post-top {
+  background-color: transparent;
+  background-image: url(/assets/lineart.png);
+  background-size: 1188px 219px;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 [data-theme="dark"] .top span {

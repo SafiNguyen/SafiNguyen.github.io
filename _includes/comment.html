@@ -10,6 +10,39 @@
          data-colorscheme="light"></div>
   </section>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/{{ site.facebook_locale | default: 'vi_VN' }}/sdk.js#xfbml=1&version=v18.0&appId={{ site.facebook_app_id | default: '' }}" nonce="fb-nonce"></script>
+  <script>
+    // Sync Facebook comments color scheme with site dark mode
+    (function() {
+      function applyFbColorScheme() {
+        var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        var el = document.getElementById('fb-comments');
+        if (!el) return;
+        el.setAttribute('data-colorscheme', isDark ? 'dark' : 'light');
+        if (window.FB && FB.XFBML && typeof FB.XFBML.parse === 'function') {
+          FB.XFBML.parse();
+        }
+      }
+      // Run after DOM ready and after SDK loads
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', applyFbColorScheme);
+      } else {
+        applyFbColorScheme();
+      }
+      // Observe theme changes
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+          if (m.type === 'attributes' && m.attributeName === 'data-theme') {
+            applyFbColorScheme();
+          }
+        });
+      });
+      observer.observe(document.documentElement, { attributes: true });
+      // Fallback: re-apply after SDK async load
+      window.fbAsyncInit = function() {
+        applyFbColorScheme();
+      };
+    })();
+  </script>
 {%- elsif site.disqus -%}
   <section class="post-footer-item comment">
     <div id="disqus_thread"></div>
