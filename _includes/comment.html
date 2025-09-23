@@ -48,15 +48,14 @@
     <div id="disqus_thread"></div>
   </section>
   <script>
+    // Disqus configuration must be declared before loading embed.js
+    var disqus_config = function () {
+      this.page.url = '{{ page.url | absolute_url }}';
+      this.page.identifier = '{{ page.id | default: page.url }}';
+    };
     (function() {
       var d = document, s = d.createElement('script');
-      {% if site.disqus_url and site.disqus_url != '' %}
-      s.src = '{{ site.disqus_url }}';
-      {% elsif site.disqus_shortname %}
       s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
-      {% else %}
-      s.src = '';
-      {% endif %}
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
